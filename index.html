@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp"><!--this brings angular functionality for the page-->
+<head>
+</head>
+<body>
+
+<div ng-controller="myController", "addToDoController">
+
+	<h3>To Do List</h3>
+	<ul>
+		<li ng-repeat="toDo in list">{{toDo}}</li>
+	</ul>
+
+	<form ng-submit = "addtoDo()">
+		<input type= "text" ng-model = "enteredtoDo">
+		<input type = "Submit" value = "Add!">
+	</form>
+
+
+</div>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
